@@ -1,0 +1,4 @@
+FROM lambci/lambda:python3.8
+COPY ./lambda/requirements.txt .
+USER root
+RUN pip install -r requirements.txt
